@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for i in range(97, 123):
-    print(f"{i:c}", end="")
+for c in range(97, 123):
+    print("{}".format(c)), end="")
 
