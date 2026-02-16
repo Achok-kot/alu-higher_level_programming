@@ -5,7 +5,7 @@ request(process.argv[2], (error, response, body) => {
   if (error) {
     console.log(error);
   } else {
-    fs.writeFile(process.argv[3], body, 'utf-8', (err) => {
+    fs.writeFile(process.argv[3], body, (err) => {
       if (err) {
         console.log(err);
       }
