@@ -15,6 +15,8 @@ request(process.argv[2], (error, response, body) => {
         }
       }
     });
-    console.log(completed);
+    if (Object.keys(completed).length > 0) {
+      console.log(completed);
+    }
   }
 });
